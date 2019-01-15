@@ -6,6 +6,13 @@ if you work without framework and you want to use the same idea of middleware us
 - create a folder to put in it our middlewares
 - (not required) create a file to put in it the registered middlewares
 - to register a middleware use this
+--  ```php
+	$middleware->make("used name", "class name");
+	```
+- to use a middleware use this
+--  ```php
+	$middleware->use("used name");
+	```
 
 ## Example
 ```php
