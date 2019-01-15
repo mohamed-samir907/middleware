@@ -34,7 +34,6 @@ class Middleware
 	/**
 	 * Create Instance from The Class
 	 * 
-	 * @param mixed Middlewares Directory
 	 * @return Object
 	 */
 	public static function getInstance()
@@ -61,6 +60,7 @@ class Middleware
 	 * 
 	 * @param string $name
 	 * @param string $className
+	 * @return void
 	 */
 	public function make($name, $className)
 	{
@@ -70,7 +70,8 @@ class Middleware
 	/**
 	 * Set Middleware to a Class and Run it
 	 * 
-	 * @return 
+	 * @param string $middleware
+	 * @return void
 	 */
 	public function use($middleware)
 	{
