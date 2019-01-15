@@ -1,18 +1,18 @@
 ## What is the Middleware ?
-if you work without framework and you want to use the same idea of middleware used in laravel. This is a simple way that allows to you to make a middleware without using a framework.
+if you work without framework and you want to use the same idea of middleware used in laravel. This is a simple way that allows you to make a middleware without using a framework.
 
 ## How to use it ?
 - require the Middleware.php class in your project
 - create a folder to put in it our middlewares
 - (not required) create a file to put in it the registered middlewares
 - to register a middleware use this
---  ```php
+```php
 	$middleware->make("used name", "class name");
-	```
+```
 - to use a middleware use this
---  ```php
+```php
 	$middleware->use("used name");
-	```
+```
 
 ## Example
 ```php
